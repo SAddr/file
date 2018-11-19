@@ -4,7 +4,7 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 yum makecache;
 yum install wget;
 yum install -y SDL gcc make perl;
-yum install -y VirtualBox*.rpm;
+yum install -y https://download.virtualbox.org/virtualbox/5.2.22/VirtualBox-5.2-5.2.22_126460_el7-1.x86_64.rpm;
 yum insyall kernel-devel;
 ver=$(uname -r)
 if [ $ver != "3.10.0-862.14.4.el7.x86_64" ]; then  
