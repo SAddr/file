@@ -2,7 +2,6 @@
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base2.repo_bak;
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo;
 yum makecache;
-yum install wget;
 yum install -y SDL gcc make perl;
 yum install -y https://download.virtualbox.org/virtualbox/5.2.22/VirtualBox-5.2-5.2.22_126460_el7-1.x86_64.rpm;
 yum insyall kernel-devel;
