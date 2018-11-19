@@ -1,4 +1,4 @@
-输入一下代码virtu安装albox虚拟机软件
+输入一下代码安装virtualbox虚拟机软件
 wget https://github.com/SAddr/file/raw/master/virtualbox && chmod 777 virtualbox && ./virtualbox 
 
 如果需要识别NTFS格式U盘或者硬盘输入一下代码
