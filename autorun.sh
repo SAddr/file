@@ -6,3 +6,4 @@ echo 请稍等...正在设置虚拟机自动启动
 echo VBoxManage startvm $server --type headless >> /etc/rc.local
 chmod +x /etc/rc.d/rc.local
 cat  /etc/rc.local
+echo 设备完成请输入reboot重启后查看是虚拟机是否启动
