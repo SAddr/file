@@ -6,4 +6,4 @@ wget https://github.com/SAddr/file/raw/master/virtualbox && chmod 777 virtualbox
 wget https://github.com/SAddr/file/raw/master/ntfs.sh && chmod 777 ntfs.sh && ./ntfs.sh
 
 虚拟机自动启动
-wget https://github.com/SAddr/file/raw/master/autorun.sh && chmod 777 autorun.sh ./autorun.sh
+wget https://github.com/SAddr/file/raw/master/autorun.sh && chmod 777 autorun.sh && ./autorun.sh
