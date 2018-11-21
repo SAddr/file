@@ -5,5 +5,5 @@ wget https://github.com/SAddr/file/raw/master/virtualbox && chmod 777 virtualbox
 如果需要识别NTFS格式U盘或者硬盘输入以下代码
 wget https://github.com/SAddr/file/raw/master/ntfs.sh && chmod 777 ntfs.sh && ./ntfs.sh
 
-//虚拟机自动启动
+虚拟机自动启动
 wget https://github.com/SAddr/file/raw/master/autorun.sh && chmod 777 autorun.sh ./autorun.sh
