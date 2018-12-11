@@ -11,7 +11,7 @@ wget https://github.com/SAddr/file/raw/master/autorun.sh && chmod 777 autorun.sh
 
 
 systemctl disable firewalld.service //禁用防火墙自启动
-systemctl status firewalld.service //关闭防火墙
+systemctl stop firewalld.service   //关闭防火墙
 
 
 
