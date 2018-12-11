@@ -10,6 +10,10 @@ wget https://github.com/SAddr/file/raw/master/virtualbox && chmod 777 virtualbox
 wget https://github.com/SAddr/file/raw/master/autorun.sh && chmod 777 autorun.sh && ./autorun.sh
 
 
+systemctl disable firewalld.service //禁用防火墙自启动
+systemctl status firewalld.service //关闭防火墙
+
+
 
 
 
