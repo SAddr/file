@@ -10,4 +10,4 @@ yum install mysql-community-server-8.0.13-1.el7.x86_64.rpm -y
 systemctl restart mysqld
 echo "please input password"
 mysqladmin  -u root -p password
-mysql -u root -p123qweASD,.
+mysql -u root -p
