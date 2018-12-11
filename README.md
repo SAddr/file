@@ -10,3 +10,6 @@ wget https://github.com/SAddr/file/raw/master/autorun.sh && chmod 777 autorun.sh
 
 install java and Mysql
 wget https://github.com/SAddr/file/raw/master/virtualbox && chmod 777 javamysql && ./javamysql
+
+
+http://rpmfind.net/linux/rpm2html/search.php?query=kernel-devel-x86_64
