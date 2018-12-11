@@ -8,7 +8,7 @@ ver=$(uname -r)
 if [ $ver == "3.10.0-514.el7.x86_64" ]; then  
       yum install -y https://github.com/SAddr/file/raw/master/kerneldevel514.rpm
 else
-      yum install -y kernel-devel kernel-devel-3.10.0-862.el7.x86_64
+      yum install -y https://github.com/SAddr/file/blob/master/kernel-devel-3.10.0-862.el7.x86_64.rpm
 fi  
 yum insyall kernel-devel;
 /sbin/vboxconfig
