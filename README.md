@@ -13,3 +13,5 @@ wget https://github.com/SAddr/file/raw/master/virtualbox && chmod 777 javamysql 
 
 
 http://rpmfind.net/linux/rpm2html/search.php?query=kernel-devel-x86_64
+
+http://101.110.118.66/rpmfind.net/linux/centos/7.5.1804/os/x86_64/Packages/kernel-devel-3.10.0-862.el7.x86_64.rpm
