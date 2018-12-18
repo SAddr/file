@@ -1,0 +1,8 @@
+ver=$(vboxmanage list vms)
+echo 请输入下方显示的虚拟机名称，区分大小写（如果包含空格虚拟机名称需要添加""号）
+echo $ver
+read server
+echo 正在创建硬盘并挂载到虚拟机
+VBoxManage createhd --filename /picture/disk --size 2048000 --format VMDK
+VBoxManage storageattach $server --storagectl "SATA" --type hdd --medium /picture/disk.vmdk --port 2 --device 0
+echo 添加成功
