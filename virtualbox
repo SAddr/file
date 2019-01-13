@@ -7,10 +7,12 @@ yum install -y https://download.virtualbox.org/virtualbox/5.2.22/VirtualBox-5.2-
 ver=$(uname -r)
 if [ $ver == "3.10.0-514.el7.x86_64" ]; then  
       yum install -y https://github.com/SAddr/file/raw/master/kerneldevel514.rpm
-else
+elif [ $ver == "3.10.0-862.el7.x86_64"]
       yum install -y https://github.com/SAddr/file/raw/master/kernel-devel-3.10.0-862.el7.x86_64.rpm
+else 
+    yum insyall kernel-devel;
 fi  
-yum insyall kernel-devel;
+
 /sbin/vboxconfig
 mv /etc/yum.repos.d/CentOS-Base2.repo_bak /etc/yum.repos.d/CentOS-Base.repo;
 yum makecache
