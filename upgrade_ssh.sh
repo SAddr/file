@@ -1,13 +1,14 @@
 #!/usr/bin/bash
 
-
+export http_proxy=http://10.50.4.50:808/
+export https_proxy=http://10.50.4.50:808/
 #关闭selinux，避免屏蔽ssh
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 setenforce 0
 wget https://github.com/SAddr/file/raw/master/zlib-devel-1.2.3-29.el6.x86_64.rpm
 wget https://github.com/SAddr/file/raw/master/openssh-7.9p1.tar.gz
 #环境依赖
-yun -y ubstall zlib-devel-1.2.3-29.el6.x86_64.rpm
+yum -y ubstall zlib-devel-1.2.3-29.el6.x86_64.rpm
 yum -y install gcc
 yum -y install openssl-devel
 
