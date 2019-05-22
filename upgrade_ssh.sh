@@ -13,7 +13,7 @@ cd openssh-7.9p1
 
 
 #编译安装
-./configure
+./configure --prefix=/usr
 make && make install
 
 
