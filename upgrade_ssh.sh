@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-export http_proxy=http://10.50.4.50:808/
-export https_proxy=http://10.50.4.50:808/
+
 #关闭selinux，避免屏蔽ssh
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 setenforce 0
@@ -16,21 +15,16 @@ yum -y install openssl-devel
 tar zxvf openssh-7.9p1.tar.gz
 cd openssh-7.9p1
 
-#制作备份
-mkdir back
-mv  /etc/ssh/ back/ssh.back
 
 #编译安装
 ./configure --prefix=/usr --sysconfdir=/etc/ssh
 make && make install
 
-cp contrib/redhat/sshd.init /etc/init.d/sshd
-
 
 #解决root用户无法登陆
-echo "Port 22" >> /etc/ssh/sshd_config
-echo "PermitRootLogin yes"  >> /etc/ssh/sshd_config
-echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+#echo "Port 22" >> /etc/ssh/sshd_config
+#echo "PermitRootLogin yes"  >> /etc/ssh/sshd_config
+#echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 
 systemctl enable sshd
 
