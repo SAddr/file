@@ -8,7 +8,7 @@ setenforce 0
 wget https://github.com/SAddr/file/raw/master/zlib-devel-1.2.3-29.el6.x86_64.rpm
 wget https://github.com/SAddr/file/raw/master/openssh-7.9p1.tar.gz
 #环境依赖
-yum -y ubstall zlib-devel-1.2.3-29.el6.x86_64.rpm
+yum -y install zlib-devel-1.2.3-29.el6.x86_64.rpm
 yum -y install gcc
 yum -y install openssl-devel
 
