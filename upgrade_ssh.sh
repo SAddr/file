@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-export http_proxy=http://10.50.4.50:808/
-export https_proxy=http://10.50.4.50:808/
+
 #关闭selinux，避免屏蔽ssh
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 setenforce 0
